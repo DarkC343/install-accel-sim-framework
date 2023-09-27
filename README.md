@@ -3,11 +3,11 @@ A straightforward way to install Accel-Sim framework. Follow README and clone th
 
 # Steps
 1) Download `https://releases.ubuntu.com/18.04/ubuntu-18.04.6-live-server-amd64.iso`. Use `Rufus` to make a bootable USB of this image. You can also install in VM. If you don't have a USB stick you can burn it into a CD using UltraISO.
-2) Make sure you have a proper internet connection. Follow this or this for more information.
+2) Make sure you have a proper internet connection. Follow [this](https://www.makeuseof.com/connect-to-wifi-with-nmcli/) or [this](https://www.makeuseof.com/connect-to-wifi-network-on-ubuntu-server/) for more information.
 3) Run `sudo apt-get install -y wget build-essential xutils-dev bison zlib1g-dev flex libglu1-mesa-dev libssl-dev libxml2-dev libboost-all-dev git g++ libxml2-dev python-setuptools python-dev python3-pip`
 4) Run `pip3 install pyyaml plotly psutil`
 5) It is a good idea to download other requirements offline to make reusable for your future same installations. Download these links `http://developer.download.nvidia.com/compute/cuda/11.0.1/local_installers/cuda_11.0.1_450.36.06_linux.run`, `https://engineering.purdue.edu/tgrogers/gpgpu-sim/benchmark_data/all.gpgpu-sim-app-data.tgz` and `http://developer.download.nvidia.com/compute/cuda/4_2/rel/sdk/gpucomputingsdk_4.2.9_linux.run`.
-6) Download latest releases of official `accel-sim-framework` and `gpu-app-collection`. Unzip them.
+6) Download latest releases of official `accel-sim-framework` [v1.2.0](https://github.com/accel-sim/accel-sim-framework/archive/refs/tags/v1.2.0.zip) and `gpu-app-collection` [v1.0.1](https://github.com/accel-sim/gpu-app-collection/releases). Unzip them. You can also `git clone https://github.com/accel-sim/accel-sim-framework` instead of using it's released package.
 7) Move files in two above steps to your newly installed ubuntu machine.
 8) Run `chmod +x cuda_11.0.1_450.36.06_linux.run` and then `sudo ./cuda_11.0.1_450.36.06_linux.run`. If you don't have a GPU hardware then just uncheck nvidia driver (first item).
 9) Set variables as described in the ouptut of previous step. Next three steps set it permenantly.
